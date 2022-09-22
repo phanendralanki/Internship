@@ -35,3 +35,49 @@ public class Anagram {
 
     }
 }
+
+
+
+
+
+
+
+
+
+// Another method without sorting
+/*
+import java.util.Scanner;
+public class Trying {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        String str1;
+        System.out.println("Enter String1: ");
+        str1 = input.nextLine();
+        String str2;
+        System.out.println("Enter String2: ");
+        str2 = input.nextLine();
+//        Changing two Strings to lower Case
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+        System.out.println("The String after changing to lower case is: "+str1);
+        System.out.println("The String after changing to lower case is: "+str2);
+
+        if(str1.length() != str2.length()){
+            System.out.println("These two strings are not anagrams");
+        }
+
+        else {
+            int len = str1.length();
+            char[] string1 = str1.toCharArray();
+            char[] string2 = str2.toCharArray();
+            for(int i=0;i<len;i++){
+                for(int j=i+1;j<len;j++){
+                    if(string1[i] == string2[j]){
+                        System.out.println("the string are anagrams");
+                    }
+                }
+            }
+        }
+    }
+}
+*/
