@@ -9,8 +9,8 @@ public class Anagram {
         String str2;
         System.out.println("Enter String2: ");
         str2 = sc.nextLine();
-        str1 = str1.toLowerCase();       //grab
-        str2 = str2.toLowerCase();        //brag
+        str1 = str1.toLowerCase();       //phani
+        str2 = str2.toLowerCase();        //hanip
 
         System.out.println("str1 in lower case is: "+str1);
         System.out.println("str2 in lower case is: "+str2);
@@ -22,8 +22,8 @@ public class Anagram {
             char[] string1 = str1.toCharArray();
             char[] string2 = str2.toCharArray();
 
-            Arrays.sort(string1);   //a b g r
-            Arrays.sort(string2);     //a b g r
+            Arrays.sort(string1);   //a h i n p
+            Arrays.sort(string2);     //a h i n p
 
             if(Arrays.equals(string1 , string2)== true){
                 System.out.println("Both are Anagram");
